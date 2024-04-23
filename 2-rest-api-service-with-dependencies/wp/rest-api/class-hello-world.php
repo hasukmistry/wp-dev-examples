@@ -23,7 +23,7 @@ class Hello_World {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param LoggerInterface $logger Logger instance
+	 * @param LoggerInterface $logger Logger instance.
 	 *
 	 * @return void
 	 */
