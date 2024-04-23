@@ -1,0 +1,3 @@
+services:
+  helloWorldRestApi:
+    class: \WpDevExample\Wp\RestApi\Hello_World
