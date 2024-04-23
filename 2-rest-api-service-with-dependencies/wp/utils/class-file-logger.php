@@ -26,8 +26,6 @@ class File_Logger extends Logger implements LoggerInterface {
 	 *
 	 * @param string $name Name of the logger.
 	 * @param string $path Path to the log file.
-	 *
-	 * @return void
 	 */
 	public function __construct( string $name, string $path ) {
 		parent::__construct( $name );

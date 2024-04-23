@@ -21,8 +21,6 @@ class Hello_World {
 	 * @since 1.0.0
 	 *
 	 * @param string $site_url The site url.
-	 *
-	 * @return void
 	 */
 	public function __construct(
 		protected string $site_url,

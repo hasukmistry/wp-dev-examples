@@ -19,8 +19,6 @@ class Hello_World {
 	 * Magic method to initialize WordPress.
 	 *
 	 * @since 1.0.0
-	 *
-	 * @return void
 	 */
 	public function __invoke(): void {
 		add_action( 'rest_api_init', array( $this, 'register_route' ) );
