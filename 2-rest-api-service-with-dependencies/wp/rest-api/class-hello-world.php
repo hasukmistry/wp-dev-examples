@@ -9,12 +9,27 @@ declare(strict_types=1);
 
 namespace WpDevExample\Wp\RestApi;
 
+use Monolog\Logger;
+use Psr\Log\LoggerInterface;
+
 /**
  * HelloWorld class
  *
  * @since 1.0.0
  */
 class Hello_World {
+	/**
+	 * Hello_World Constructor.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @param LoggerInterface $logger Logger instance
+	 *
+	 * @return void
+	 */
+	public function __construct( protected LoggerInterface $logger ) {
+	}
+
 	/**
 	 * Magic method to initialize WordPress.
 	 *
@@ -42,6 +57,8 @@ class Hello_World {
 				'callback' => array( $this, 'render' ),
 			)
 		);
+
+		$this->logger->log( Logger::INFO, '[WpDevExample]: \/hello-world route added.');
 	}
 
 	/**

@@ -1,0 +1,11 @@
+services:
+  logger:
+    class: \WpDevExample\Wp\Utils\File_Logger
+    arguments:
+        name: 'default'
+        path: 'logs/error.log'
+          
+  helloWorldRestApi:
+    class: \WpDevExample\Wp\RestApi\Hello_World
+    arguments:
+      logger: '@logger'
