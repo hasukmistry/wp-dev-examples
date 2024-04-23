@@ -58,7 +58,7 @@ class Hello_World {
 			)
 		);
 
-		$this->logger->log( Logger::INFO, '[WpDevExample]: \/hello-world route added.');
+		$this->logger->log( Logger::INFO, '[WpDevExample]: \/hello-world route added.' );
 	}
 
 	/**
