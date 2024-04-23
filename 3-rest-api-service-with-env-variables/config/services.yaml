@@ -1,0 +1,5 @@
+services:
+  helloWorldRestApi:
+    class: \WpDevExample\Wp\RestApi\Hello_World
+    arguments:
+      site_url: '%wp_env(WP_SITE_URL)%'
