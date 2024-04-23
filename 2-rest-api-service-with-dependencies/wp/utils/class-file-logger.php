@@ -20,7 +20,7 @@ use Psr\Log\LoggerInterface;
  */
 class File_Logger extends Logger implements LoggerInterface {
     /**
-     * FileLogger constructor.
+     * File_Logger constructor.
      *
 	 * @since 1.0.0
 	 *
