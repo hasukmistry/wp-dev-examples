@@ -19,19 +19,19 @@ use Psr\Log\LoggerInterface;
  * @package WpDevExample\Wp\Utils
  */
 class File_Logger extends Logger implements LoggerInterface {
-    /**
-     * File_Logger constructor.
-     *
+	/**
+	 * File_Logger constructor.
+	 *
 	 * @since 1.0.0
 	 *
-     * @param string $name Name of the logger
-     * @param string $path Path to the log file
-     *
-     * @return void
-     */
-    public function __construct( string $name, string $path ) {
-        parent::__construct( $name );
+	 * @param string $name Name of the logger.
+	 * @param string $path Path to the log file.
+	 *
+	 * @return void
+	 */
+	public function __construct( string $name, string $path ) {
+		parent::__construct( $name );
 
-        $this->pushHandler( new StreamHandler( $path ) );
-    }
+		$this->pushHandler( new StreamHandler( $path ) );
+	}
 }
